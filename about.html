@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-warning navbar-light justify-content-center">
+        <div class="container mt-2 ">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item ps-4">
+              <a class="nav-link active" href="index.html"><i class="fa fa-home"></i> Home</a>
+            </li>
+           <li class="nav-item ps-4">
+              <a class="nav-link text-danger" href="about.html"><i class="fa fa-building"></i> Customer</a>
+            </li>
+            <li class="nav-item ps-4">
+              <a class="nav-link active" href="service.html"><i class="fa fa-people-group"></i> Services</a>
+            </li>
+            <li class="nav-item ps-4">
+              <a class="nav-link active" href="register.html"><i class="fa fa-note-sticky"></i> Create Account</a>
+            </li>
+            
+              
+          </ul>
+        </div>
+    </nav>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-2">
+            <button class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#newrecord">
+                <i class="fa fa-plus"></i>New Customer
+            </button>
+        </div>
+        <div class="col-lg-7">
+            <h3 class="text-info text-center">Total 200 Customers</h3>
+        </div>
+        <div class="col-lg-3">
+            <input type="text" class="form-control" placeholder="search">
+        </div>
+    </div>
+</div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table table-bordered">
+                    <tr class="text-primary">
+                        <th>SI No</th>
+                        <th>Full Name</th>
+                        <th>E Mail</th>
+                        <th>Mobile</th>
+                        <th>Address</th>
+                        <th>City</th>
+                        <th>Amount</th>
+                        <th>Action</th>
+                    </tr>
+
+                    <tr>
+                        <td>01</td>
+                        <td>Shini</td>
+                        <td>ash@123</td>
+                        <td>9998887788</td>
+                        <td>iiim,Bellandur</td>
+                        <td>Bangalore</td>
+                        <td>30000</td>
+                        <td>
+                            <i class="fa fa-edit fa-lg m-1 text-warning"
+                            data-bs-toggle="modal"
+                            data-bs-target="#newrecord"></i>
+                            
+                            <i class="fa fa-trash fa-lg m-1 text-danger"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>02</td>
+                        <td>Richa</td>
+                        <td>arrh@123</td>
+                        <td>7698887788</td>
+                        <td>hii,Chennai</td>
+                        <td>Chennai</td>
+                        <td>40000</td>
+                        <td>
+                            <i class="fa fa-edit fa-lg m-1 text-warning"></i>
+                            <i class="fa fa-trash fa-lg m-1 text-danger"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>03</td>
+                        <td>Aswin</td>
+                        <td>aswim@123</td>
+                        <td>7998887788</td>
+                        <td>Hum,Mysore</td>
+                        <td>Mysore</td>
+                        <td>60000</td>
+                        <td>
+                            <i class="fa fa-edit fa-lg m-1 text-warning"></i>
+                            <i class="fa fa-trash fa-lg m-1 text-danger"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>04</td>
+                        <td>Ashitha</td>
+                        <td>shuh@123</td>
+                        <td>8898887788</td>
+                        <td>kim,Mangalore</td>
+                        <td>Mangalore</td>
+                        <td>80000</td>
+                        <td>
+                            <i class="fa fa-edit fa-lg m-1 text-warning"></i>
+                            <i class="fa fa-trash fa-lg m-1 text-danger"></i>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        
+  <!-- Modal -->
+  <div class="modal fade" id="newrecord" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header bg-info p-2">
+          <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">New Customer</h1>
+          <button type="button" class=" btn-close" data-bs-dismiss="modal" aria-label="Close">x</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-6">
+                <label class="text-primary">Customer Name</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="col-lg-6">
+                <label for="" class="text-primary">E Mail</label>
+                <input type="mail" class="form-control">
+            </div>
+            <div class="col-lg-6">
+                <label for="" class="text-primary">City</label>
+                <select name="" id="" class="form-control">
+                    <option >Choose</option>
+                    <option >Chennai</option>
+                    <option >Bangalore</option>
+                    <option >Pune</option>
+                </select>
+            </div>
+            <div class="col-lg-6">
+                <label for="" class="text-primary">Mobile</label>
+                <input type="number" class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          
+          <button type="button" class="btn btn-danger">Save Customer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+
+
+</body>
+</html>
